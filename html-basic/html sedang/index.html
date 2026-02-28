@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RGB Gamer</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:black;
+    color:white;
+    text-align:center;
+    overflow:hidden;
+}
+
+/* Background RGB gerak */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(270deg, red, orange, yellow, green, cyan, blue, purple, red);
+    background-size:1500% 1500%;
+    animation:rgbBG 15s linear infinite;
+    z-index:-2;
+    filter:blur(120px);
+}
+
+@keyframes rgbBG{
+    0%{background-position:0%}
+    100%{background-position:300%}
+}
+
+/* Card profil */
+.card{
+    margin-top:100px;
+    background:rgba(0,0,0,0.8);
+    padding:30px;
+    width:360px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:20px;
+    box-shadow:0 0 30px cyan,0 0 60px purple;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{box-shadow:0 0 20px cyan;}
+    to{box-shadow:0 0 40px magenta;}
+}
+
+img{
+    width:120px;
+    border-radius:50%;
+    border:3px solid cyan;
+}
+
+h1{
+    margin:10px;
+    background:linear-gradient(90deg,red,orange,yellow,green,cyan,blue,purple);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:textRGB 5s linear infinite;
+    background-size:400%;
+}
+
+@keyframes textRGB{
+    0%{background-position:0%}
+    100%{background-position:400%}
+}
+
+p{
+    color:#ccc;
+}
+
+/* tombol rgb */
+.sosmed a{
+    display:inline-block;
+    margin:8px;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    background:linear-gradient(45deg,red,blue,green,purple);
+    background-size:400%;
+    animation:btnRGB 6s linear infinite;
+    transition:0.3s;
+}
+
+@keyframes btnRGB{
+    0%{background-position:0%}
+    100%{background-position:400%}
+}
+
+.sosmed a:hover{
+    transform:scale(1.2);
+    box-shadow:0 0 20px white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <img src="https://via.placeholder.com/120">
+    <h1>NAMA GAMER</h1>
+    <p>🎮 Pro Gamer Indonesia</p>
+    <p>ML • FF • PUBG • Coding</p>
+
+    <div class="sosmed">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+        <a href="#">Discord</a>
+    </div>
+</div>
+
+</body>
+</html>
