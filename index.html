@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewed Happiness - Premium Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">☕ Brewed</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#location">Lokasi</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title fade-in">Enjoy Your Morning Coffee</h1>
+                <p class="hero-subtitle fade-in">Nikmati kopi premium yang diseduh dengan passion dan perhatian terhadap detail.</p>
+                <div class="cta-buttons fade-in">
+                    <button class="btn btn-primary">Order Now</button>
+                    <button class="btn btn-outline">View Menu</button>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <svg class="coffee-cup" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cup Body -->
+                    <path d="M 50 60 L 45 240 Q 45 260 60 265 L 140 265 Q 155 260 155 240 L 150 60 Z" fill="#6f4e37" opacity="0.9"/>
+                    <!-- Cup Highlight -->
+                    <ellipse cx="70" cy="100" rx="15" ry="25" fill="white" opacity="0.2"/>
+                    <!-- Handle -->
+                    <path d="M 155 90 Q 180 90 180 150 Q 180 210 155 210" stroke="#6f4e37" stroke-width="8" fill="none" opacity="0.9"/>
+                    <!-- Coffee Inside -->
+                    <ellipse cx="100" cy="200" rx="45" ry="15" fill="#8B6F47" opacity="0.7"/>
+                    <!-- Foam -->
+                    <ellipse cx="100" cy="80" rx="48" ry="20" fill="#D4A574" opacity="0.8"/>
+                    <!-- Saucer -->
+                    <ellipse cx="100" cy="270" rx="70" ry="12" fill="#8B6F47" opacity="0.6"/>
+                </svg>
+                <div class="floating-elements">
+                    <div class="float-bean bean-1">🫘</div>
+                    <div class="float-bean bean-2">🫘</div>
+                    <div class="float-leaf leaf-1">🍃</div>
+                    <div class="float-leaf leaf-2">🍃</div>
+                </div>
+                <!-- Steam Animation -->
+                <div class="steam-container">
+                    <svg class="steam" viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+                        <path class="steam-line" d="M 20 70 Q 25 50 20 30" stroke="#c0a080" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path class="steam-line" d="M 30 70 Q 35 50 30 30" stroke="#c0a080" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path class="steam-line" d="M 40 70 Q 45 50 40 30" stroke="#c0a080" stroke-width="2" fill="none" opacity="0.5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Pilihan minuman premium yang kami sajikan setiap hari</p>
+            </div>
+            <div class="menu-grid">
+                <!-- Menu Card 1 -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-image" style="background: linear-gradient(135deg, #D4A574, #8B6F47);">
+                        <span class="menu-icon">☕</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Espresso</h3>
+                        <p class="menu-description">Kopi murni yang kuat dan bold dengan crema sempurna</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 25.000</span>
+                            <button class="btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 2 -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-image" style="background: linear-gradient(135deg, #c0a080, #9e8b5f);">
+                        <span class="menu-icon">🥛</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Cappuccino</h3>
+                        <p class="menu-description">Espresso dengan susu kukus yang lembut dan busa creamy</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 35.000</span>
+                            <button class="btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 3 -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-image" style="background: linear-gradient(135deg, #e6b89c, #d4a574);">
+                        <span class="menu-icon">🍶</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Latte</h3>
+                        <p class="menu-description">Minuman yang smooth dengan perbandingan susu yang pas</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 38.000</span>
+                            <button class="btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 4 -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-image" style="background: linear-gradient(135deg, #f5d5a8, #e6b89c);">
+                        <span class="menu-icon">🍫</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Mocha</h3>
+                        <p class="menu-description">Perpaduan sempurna antara kopi dan cokelat yang lezat</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 40.000</span>
+                            <button class="btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 5 -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-image" style="background: linear-gradient(135deg, #ffe4b5, #ffd9a8);">
+                        <span class="menu-icon">🧊</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Iced Coffee</h3>
+                        <p class="menu-description">Kopi dingin yang menyegarkan untuk hari yang panas</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 32.000</span>
+                            <button class="btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Card 6 -->
+                <div class="menu-card reveal-up">
+                    <div class="menu-image" style="background: linear-gradient(135deg, #f0e5d8, #e6d5c8);">
+                        <span class="menu-icon">🍰</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Vanilla Latte</h3>
+                        <p class="menu-description">Latte dengan sentuhan vanilla yang manis dan aromatic</p>
+                        <div class="menu-footer">
+                            <span class="price">Rp 42.000</span>
+                            <button class="btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal-up">
+                    <h2 class="section-title">Tentang Brewed Happiness</h2>
+                    <p>Kami percaya bahwa secangkir kopi bukan sekadar minuman, tetapi sebuah pengalaman yang harus dinikmati sepenuh hati. Sejak didirikan pada 2018, Brewed Happiness berkomitmen untuk menyajikan kopi premium dengan kualitas terbaik dan layanan yang ramah.</p>
+                    <p>Setiap biji kopi yang kami pilih adalah hasil dari riset mendalam terhadap berbagai perkebunan terbaik di dunia. Barista kami yang berpengalaman akan menyiapkan kopi Anda dengan sempurna, setiap saat.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Kopi Premium Organik</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Barista Bersertifikat</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Lingkungan Nyaman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-illustration reveal-up">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Decorative Elements -->
+                        <circle cx="150" cy="150" r="140" fill="none" stroke="#6f4e37" stroke-width="2" opacity="0.2"/>
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#D4A574" stroke-width="2" opacity="0.3"/>
+                        <!-- Coffee Bean Pattern -->
+                        <g opacity="0.6">
+                            <ellipse cx="100" cy="100" rx="20" ry="30" fill="#6f4e37" transform="rotate(-45 100 100)"/>
+                            <ellipse cx="200" cy="100" rx="20" ry="30" fill="#6f4e37" transform="rotate(45 200 100)"/>
+                            <ellipse cx="150" cy="200" rx="20" ry="30" fill="#6f4e37" transform="rotate(25 150 200)"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Lihat suasana hangat di Brewed Happiness</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-up" style="background: linear-gradient(135deg, #D4A574, #8B6F47);">
+                    <div class="gallery-overlay">☕</div>
+                </div>
+                <div class="gallery-item reveal-up" style="background: linear-gradient(135deg, #e6b89c, #d4a574);">
+                    <div class="gallery-overlay">🪑</div>
+                </div>
+                <div class="gallery-item reveal-up" style="background: linear-gradient(135deg, #f5d5a8, #e6b89c);">
+                    <div class="gallery-overlay">🌿</div>
+                </div>
+                <div class="gallery-item reveal-up" style="background: linear-gradient(135deg, #c0a080, #9e8b5f);">
+                    <div class="gallery-overlay">👥</div>
+                </div>
+                <div class="gallery-item reveal-up" style="background: linear-gradient(135deg, #ffe4b5, #ffd9a8);">
+                    <div class="gallery-overlay">🌞</div>
+                </div>
+                <div class="gallery-item reveal-up" style="background: linear-gradient(135deg, #f0e5d8, #e6d5c8);">
+                    <div class="gallery-overlay">🎵</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apa Kata Pelanggan Kami</h2>
+                <p class="section-subtitle">Pengalaman terbaik dari para pecinta kopi</p>
+            </div>
+            <div class="testimonial-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal-up">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Kopi terbaik yang pernah saya minum! Suasananya nyaman dan barista-nya sangat profesional. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">😊</div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal-up">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Tempat favorit saya untuk bekerja. WiFi cepat, minuman enak, dan ambience yang sempurna untuk produktivitas."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">🧑‍💼</div>
+                        <div>
+                            <h4>Ahmad Rizki</h4>
+                            <p>Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal-up">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Kualitas kopi dan pelayanan yang konsisten. Harga sesuai dengan kualitas yang ditawarkan. Saya selalu datang setiap weekend!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">👩‍🦰</div>
+                        <div>
+                            <h4>Emma Davis</h4>
+                            <p>Coffee Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lokasi Kami</h2>
+                <p class="section-subtitle">Temukan kami di Jakarta Selatan yang strategis</p>
+            </div>
+            <div class="location-content">
+                <div class="location-map reveal-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7847662937577!2d106.79857!3d-6.270189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0c5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sJl.%20Kopi%20Sejahtera%20No.%2042%2C%20Jakarta%20Selatan!5e0!3m2!1sid!2sid!4v1234567890" width="100%" height="500" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-details reveal-up">
+                    <div class="detail-card">
+                        <h3>📍 Alamat Lengkap</h3>
+                        <p>Jl. Kopi Sejahtera No. 42<br>Kemang, Jakarta Selatan 12560<br>Indonesia</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>🚗 Petunjuk Arah</h3>
+                        <p>Dekat dengan Stasiun MRT Blok A<br>Parkir tersedia di depan toko<br>Mudah diakses dari segala arah</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>⏰ Jam Operasional</h3>
+                        <p>Senin - Jumat: 06:00 - 22:00<br>Sabtu - Minggu: 07:00 - 23:00<br>Buka Sepanjang Tahun</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Jl.+Kopi+Sejahtera+No.42+Jakarta+Selatan" target="_blank" class="btn btn-primary">Buka di Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kunjungi Kami</h2>
+                <p class="section-subtitle">Kami senang menyambut Anda</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item reveal-up">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Kopi Sejahtera No. 42<br>Jakarta Selatan, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="info-item reveal-up">
+                        <div class="info-icon">⏰</div>
+                        <div>
+                            <h4>Jam Buka</h4>
+                            <p>Senin - Jumat: 06:00 - 22:00<br>Sabtu - Minggu: 07:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item reveal-up">
+                        <div class="info-icon">☎️</div>
+                        <div>
+                            <h4>Hubungi Kami</h4>
+                            <p>+62 (21) 1234-5678<br>hello@brewedhappiness.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal-up">
+                    <form>
+                        <input type="text" placeholder="Nama Anda" required>
+                        <input type="email" placeholder="Email Anda" required>
+                        <input type="text" placeholder="Nomor Telepon" required>
+                        <textarea placeholder="Pesan atau Reservasi" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Brewed Happiness. Dibuat dengan ☕ dan cinta.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
